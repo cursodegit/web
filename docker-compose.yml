@@ -1,0 +1,15 @@
+version: '3'
+services:
+  node:
+    stdin_open: true
+    tty: true
+    image: node:10-alpine
+    environment:
+      - TZ=Europe/Madrid
+    volumes:
+      - .:/usr/src/app
+      - node_modules_cache:/usr/src/node_modules
+    ports:
+      - "8080:8080"
+volumes:
+  node_modules_cache:
