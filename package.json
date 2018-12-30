@@ -6,7 +6,8 @@
   "author": "Alfonso Alba García",
   "license": "MIT",
   "scripts": {
-    "start": "webpack-dev-server --config webpack.dev.js --mode development"
+    "start": "webpack-dev-server --config webpack.dev.js --mode development",
+    "build": "webpack --config webpack.dev.js --mode development"
   },
   "devDependencies": {
     "copy-webpack-plugin": "^4.6.0",
