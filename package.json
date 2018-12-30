@@ -9,6 +9,7 @@
     "start": "webpack-dev-server --config webpack.dev.js --mode development"
   },
   "devDependencies": {
+    "copy-webpack-plugin": "^4.6.0",
     "handlebars": "^4.0.12",
     "handlebars-loader": "^1.7.1",
     "html-webpack-plugin": "^3.2.0",
