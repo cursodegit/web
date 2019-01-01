@@ -43,17 +43,34 @@ module.exports = {
       filename: 'index.html'
     }),
     new HtmlWebpackPlugin({
-        template: './src/about.html',
+        template: './src/curso-de-git-avanzado-presencial.hbs',
         inject: true,
         chunks: ['index'],
-        filename: 'about.html'
+        filename: 'curso-de-git-avanzado-presencial.html'
     }),
     new HtmlWebpackPlugin({
-        template: './src/contacts.html',
-        inject: true,
-        chunks: ['index'],
-        filename: 'contacts.html'
+      template: './src/curso-de-git-avanzado-online.hbs',
+      inject: true,
+      chunks: ['index'],
+      filename: 'curso-de-git-avanzado-online.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/sobre-nosotros.hbs',
+      inject: true,
+      chunks: ['index'],
+      filename: 'sobre-nosotros.html'
+    }),
+    new HtmlWebpackPlugin({
+          template: './src/contacto.hbs',
+          inject: true,
+          chunks: ['index'],
+          filename: 'contacto.html'
+    }),
+    new HtmlWebpackPlugin({
+          template: './src/politica-privacidad-proteccion-de-datos.hbs',
+          inject: true,
+          chunks: ['index'],
+          filename: 'politica-privacidad-proteccion-de-datos.html'
     })
   ]
 };
-

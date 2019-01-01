@@ -1,0 +1,43 @@
+<!-- Header
+============================================= -->
+<header id="header" class="transparent-header full-header" data-sticky-class="not-dark">
+
+    <div id="header-wrap">
+
+        <div class="container clearfix">
+
+            <div id="primary-menu-trigger"><i class="icon-reorder"></i></div>
+
+            <!-- Logo
+            ============================================= -->
+            <div id="logo">
+                <a href="index.html" class="standard-logo" data-dark-logo="images/logo-dark.png"><img src="images/logo.png" alt="Canvas Logo"></a>
+                <a href="index.html" class="retina-logo" data-dark-logo="images/logo-dark@2x.png"><img src="images/logo@2x.png" alt="Canvas Logo"></a>
+            </div><!-- #logo end -->
+
+            <!-- Primary Navigation
+            ============================================= -->
+            <nav id="primary-menu" class="dark">
+                <ul>
+                    <li class="{{#if home }}current{{/if}}"><a href="index.html"><div>Home</div></a>
+                    </li>
+                    <li class="{{#if cursos }}current{{/if}}"><a href="#"><div>Cursos</div></a>
+                        <ul>
+                            <li><a href="curso-de-git-avanzado-presencial.html"><div><i class="icon-stack"></i>Git avanzado - presencial</div></a>
+                            </li>
+                            <li><a href="curso-de-git-avanzado-online.html"><div><i class="icon-stack"></i>Git avanzado - online</div></a>
+                            </li>
+                        </ul>
+                    </li>                    
+                    <li class="{{#if aboutUs }}current{{/if}}"><a href="sobre-nosotros.html"><div>Sobre nosotros</div></a>
+                    </li>
+                    <li class="{{#if contact }}current{{/if}}"><a href="contacto.html"><div>Contacto</div></a>
+                    </li>
+                </ul>
+            </nav><!-- #primary-menu end -->
+
+        </div>
+
+    </div>
+
+</header><!-- #header end -->
