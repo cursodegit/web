@@ -1,6 +1,7 @@
 version: '3'
 services:
   node:
+    working_dir: /usr/src/app
     stdin_open: true
     tty: true
     image: node:10-alpine
@@ -11,5 +12,7 @@ services:
       - node_modules_cache:/usr/src/node_modules
     ports:
       - "8080:8080"
+    command: ["yarn", "start"]
+      
 volumes:
   node_modules_cache:
