@@ -31,7 +31,9 @@ module.exports = {
   plugins: [
     new WriteFilePlugin(),
     new CopyWebpackPlugin([
+      {from: './src/demos', to: 'demos'},
       {from: './src/css', to: 'css'},
+      {from: './src/one-page', to: 'one-page'},
       {from: './src/style.css', to: 'style.css'},
       {from: './src/images', to: 'images'},
       {from: './src/js', to: 'js'},
