@@ -657,9 +657,9 @@ body:not(.device-md):not(.device-sm):not(.device-xs) #primary-menu.style-2.cente
 
 #header.split-menu #primary-menu > ul { z-index: 199; }
 
-#header.split-menu #primary-menu > ul:first-child { float: left; }
+#header.split-menu #primary-menu > ul:nth-child(1) { float: left; }
 
-#header.split-menu #primary-menu > ul:last-child { float: right; }
+#header.split-menu #primary-menu > ul:nth-child(2) { float: right; }
 
 
 

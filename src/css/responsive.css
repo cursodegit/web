@@ -242,8 +242,8 @@
 
 	body:not(.primary-menu-open) #header.dark.transparent-header-responsive,
 	body:not(.primary-menu-open) #header.transparent-header-responsive {
-	    background-color: transparent;
-	    border: none;
+		background-color: transparent;
+		border: none;
 	}
 
 	body:not(.primary-menu-open) #header.semi-transparent.transparent-header-responsive {
@@ -425,7 +425,12 @@
 		padding-left: 15px;
 	}
 
-	#primary-menu ul li .mega-menu-content { padding-left: 0; }
+	#primary-menu ul li .mega-menu-content {
+		padding-left: 0;
+		display: none;
+	}
+
+	#primary-menu.on-click ul li .mega-menu-content.d-block { display: block !important; }
 
 	#primary-menu ul ul:not(.mega-menu-column) ul {
 		top: 0 !important;
@@ -491,10 +496,10 @@
 
 	#primary-menu ul li .mega-menu-content ul.mega-menu-column {
 		float: none;
-		width: auto;
-		-ms-flex: 0 0 100%;
-		flex: 0 0 100%;
-		max-width: 100%;
+		width: auto !important;
+		-ms-flex: 0 0 100% !important;
+		flex: 0 0 100% !important;
+		max-width: 100% !important;
 		margin: 0;
 		border-left: 0 !important;
 		padding-left: 15px;
@@ -726,6 +731,8 @@
 	.responsive-sticky-header:not(.static-sticky) #top-search form { height: 60px !important; }
 
 	.responsive-sticky-header:not(.static-sticky) #top-cart .top-cart-content { top: 40px; }
+
+	#header.responsive-sticky-header:not(.static-sticky) ~ #page-menu.sticky-page-menu #page-menu-wrap { top: 60px; }
 
 
 	/* Off Canvas Menu
@@ -1393,6 +1400,14 @@
 
 	.news-carousel .overlay { display: none; }
 
+	.landing-video {
+		position: relative;
+		top: 14px;
+		width: 76%;
+		height: auto;
+		margin: 19px auto 0;
+	}
+
 	/* Cookie Notifications
 	-----------------------------------------------------------------*/
 
@@ -1517,14 +1532,6 @@
 
 	.error404,
 	.error404-wrap .error404 { font-size: 160px; }
-
-	.landing-video {
-		position: relative;
-		top: 12px;
-		width: 333px;
-		height: 187px;
-		margin: 19px 0 0 53px;
-	}
 
 }
 
@@ -1678,14 +1685,6 @@
 
 	.error404,
 	.error404-wrap .error404 { font-size: 120px; }
-
-	.landing-video {
-		position: relative;
-		top: 9px;
-		width: 212px;
-		height: 119px;
-		margin: 19px 0 0 34px;
-	}
 
 	.landing-form-overlay { margin-left: -155px; }
 
