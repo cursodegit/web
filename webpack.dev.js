@@ -51,10 +51,10 @@ module.exports = {
         filename: 'curso-de-git-avanzado-presencial.html'
     }),
     new HtmlWebpackPlugin({
-      template: './src/curso-de-git-avanzado-online.hbs',
+      template: './src/curso-de-git-avanzado-a-distancia.hbs',
       inject: true,
       chunks: ['index'],
-      filename: 'curso-de-git-avanzado-online.html'
+      filename: 'curso-de-git-avanzado-a-distancia.html'
     }),
     new HtmlWebpackPlugin({
       template: './src/sobre-nosotros.hbs',
