@@ -43,6 +43,13 @@ module.exports = {
       inject: true,
       chunks: ['index'],
       filename: 'index.html'
+    })
+    ,
+    new HtmlWebpackPlugin({
+      template: './src/demo_k5Asi84kks8u1sl9dah1AS8AS7aSDa.hbs',
+      inject: true,
+      chunks: ['index'],
+      filename: 'demo_k5Asi84kks8u1sl9dah1AS8AS7aSDa.html'
     }),
     new HtmlWebpackPlugin({
         template: './src/curso-de-git-avanzado-presencial.hbs',
