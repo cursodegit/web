@@ -4,6 +4,7 @@ COPY . /app
 WORKDIR /app
 RUN yarn install && yarn build
 
-FROM nginx:1.17-alpine
+FROM nginx:1.21-alpine
 
 COPY --from=node /app/dist /usr/share/nginx/html
+
